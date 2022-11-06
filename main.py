@@ -72,8 +72,8 @@ class Comment(db.Model):
     post_id = db.Column(db.Integer, ForeignKey("blog_posts.id"))
 
 
-with app.app_context():
-    db.create_all()
+# with app.app_context():
+#     db.create_all()
 
 # SERVER
 
